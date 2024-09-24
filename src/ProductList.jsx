@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./ProductList.css";
 import { useSelector, useDispatch } from "react-redux";
 import CartItem from "./CartItem";
+import { addItem } from "./CartSlice";
 
 
 function ProductList() {
@@ -301,7 +302,7 @@ function ProductList() {
                                 <img src={plant.image} alt={plant.name} className="product-image"/>
                                 <div className="product-price"> ${plant.cost} </div>
                                 <div className="product-description"> {plant.description} </div>
-                                <button onClick={() => handleAddToCart(plant)} className="product-button" >Add to Cart</button>
+                                <button onClick={() => handleAddToCart(plant)} className="product-button" > Add to Cart </button>
                             </div>
                         ))}
                     </div>
