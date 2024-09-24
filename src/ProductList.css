@@ -46,6 +46,12 @@ body {
     width: 100vw;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+}
+.product-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .product-list {
     display: flex;
@@ -89,6 +95,10 @@ body {
 .product-price {
     color: #e74c3c;
     font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-description {
     margin-bottom: 10px;
 }
 
@@ -167,10 +177,11 @@ body {
 .cart_quantity_count{
     margin-top: 16px;
     /* background-color: red; */
-    margin-left: 27px;
+    margin-left: 23px;
     position: absolute;
-    font-size: 29px;
-
+    font-size: 28px;
+    /* text-align: center; */
+    /* z-index: 10; */
 }
 .plantname_heading{
    display: flex;
